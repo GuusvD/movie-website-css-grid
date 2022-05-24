@@ -1,0 +1,251 @@
+.carousel, .navigatie, .mainContent, .movie, .footer, .OverMijText, .ActeurText, .formulier, .subContent, .banner1, .banner2, .banner3, .Film1Text, .Film2Text, .Film3Text, .filmsMovies {
+    background-color: black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.wrapperHoofdpagina {
+    width: 68%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "nav nav nav nav"
+        "carousel carousel carousel carousel"
+        "maincontent maincontent maincontent maincontent"
+        "maincontent maincontent maincontent maincontent"
+        "footer footer footer footer"
+    ;
+}
+
+.carousel {
+    grid-area: carousel;
+}
+
+.navigatie {
+    background-color: black;
+    grid-area: nav;
+    width: 98%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+        "nav nav nav nav nav"
+    ;
+}
+
+.navigatie a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigatie a:hover {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigatie a.active {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigatie input[type=text] {
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.mainContent {
+    grid-area: maincontent;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 17px;
+}
+
+.slideshow {
+    padding: 0px;
+    position: relative;
+    width: 1000px;
+    height: 500px;   
+}
+  
+.slideshow > div {
+    position: absolute;
+}
+
+.frontpageMovies {
+    background-color: rgba(0, 0, 0, 0);
+    width: 98%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "afbeelding1 afbeelding2 afbeelding3"
+    ;
+}
+
+.mainContentFrontpage, .frontpageMovies {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 5px;
+    padding: 5px;
+}
+
+.mainContentFrontpage {
+    grid-area: maincontent
+}
+
+.filmsMovies {
+    background-color: black;
+    width: 98%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "afbeelding1 afbeelding2 afbeelding3"
+    ;
+}
+
+.mainContentFilms, .filmsMovies {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 5px;
+    padding: 5px;
+}
+
+.mainContentFilms {
+    grid-area: maincontent;
+}
+
+.searchbar {
+    margin: auto;
+    display: block;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.afbeeldingForm {
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 90%;
+}
+
+.wrapperForm, .wrapperOvermij, .wrapperActeurs {
+    width: 68%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "nav nav nav nav"
+        "maincontent maincontent maincontent maincontent"
+        "maincontent maincontent maincontent maincontent"
+        "maincontent maincontent maincontent maincontent"
+        "footer footer footer footer"
+    ;
+}
+
+.subContent {
+    background-color: black;
+    width: 98%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "formulier afbeelding"
+    ;
+}
+
+.formulier {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+.wrapperFilms {
+    width: 68%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "nav nav nav nav"
+        "maincontent maincontent maincontent maincontent"
+        "maincontent maincontent maincontent maincontent"
+        "maincontent maincontent maincontent maincontent"
+        "footer footer footer footer"
+    ;
+}
+
+.wrapperFilm123 {
+    width: 68%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "nav nav nav nav"
+        "banner banner banner banner"
+        "maincontent maincontent maincontent maincontent"
+        "maincontent maincontent maincontent maincontent"
+        "footer footer footer footer"
+    ;
+}
+
+.Film1Text, .Film2Text, .Film3Text {
+    background-color: black;
+    width: 98%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "afbeelding text"
+    ;
+}
+
+.OverMijText, .ActeurText, .textMovie1, .textMovie2, .textMovie3, .description, .footer {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.textLine {
+    width: 375px;
+}
+
+.OverMijText, .ActeurText {
+    background-color: black;
+    width: 98%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "afbeelding text"
+    ;
+}

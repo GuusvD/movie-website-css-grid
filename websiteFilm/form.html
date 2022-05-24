@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulier</title>
+    <link rel="stylesheet" href=".//css/style.css">
+
+    <style>
+        body {
+            background-image: url('./img/background.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapperForm">
+        <nav class="navigatie">
+            <a href="./index.html">Hoofdpagina</a>
+            <a href="./films.html">Films</a>
+            <a class="active" href="./form.html">Formulier</a>
+            <a href="./overMij.html">Over mij</a>
+            <input class="searchbar" type="text" placeholder="Zoeken...">
+        </nav>
+        <main class="mainContent">
+            <section class="subContent">
+                <form class="formulier">
+                    <h1 class="description">Film toevoegen</h1>
+                    <label class="description">Naam:</label><br>
+                    <input type="text" class="textLine" placeholder="Naam" required="required"><br><br>
+                    <label class="description">Naam film:</label><br>
+                    <input type="text" class="textLine" placeholder="Naam film" required="required"><br><br>
+                    <label class="description">Tijdsduur (minuten):</label><br>
+                    <input type="number" class="textLine" placeholder="Tijdsduur" required="required"><br><br>
+                    <label class="description">Genre:</label><br>
+                    <input type="text" class="textLine" placeholder="Genre" required="required"><br><br>
+                    <label class="description">Release datum:</label><br>
+                    <input type="date" class="textLine" placeholder="Release datum" required="required"><br><br>
+                    <label class="description">Korte beschrijving film:</label><br>
+                    <textarea class="descrMovie" rows="6" cols="50" required="required"></textarea>
+                    <br>
+                    <input type="submit" value="Verzenden">
+                </form>
+                <div class="afbeeldingForm">
+                    <img src="./img/formSmall.png">
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Door Guus van Damme</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

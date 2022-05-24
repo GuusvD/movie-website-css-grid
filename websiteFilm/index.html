@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoofdpagina</title>
+    <link rel="stylesheet" href=".//css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#slideshow > div:gt(0)").hide();
+
+            setInterval(function () {
+                $('#slideshow > div:first')
+                    .fadeOut(1000)
+                    .next()
+                    .fadeIn(1000)
+                    .end()
+                    .appendTo('#slideshow');
+            }, 3000);
+        })
+    </script>
+
+    <style>
+        body {
+            background-image: url('./img/background.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapperHoofdpagina">
+        <header class="carousel">
+            <div id="slideshow" class="slideshow">
+                <div>
+                    <a href="./filmDetails1.html">
+                        <img src="./img/1917.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="./filmDetails2.html">
+                        <img src="./img/dune.jpg">
+                    </a>
+                </div>
+                <div>
+                    <a href="./filmDetails3.html">
+                        <img src="./img/dunkirk.jpg">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <nav class="navigatie">
+            <a class="active" href="./index.html">Hoofdpagina</a>
+            <a href="./films.html">Films</a>
+            <a href="./form.html">Formulier</a>
+            <a href="./overMij.html">Over mij</a>
+            <input class="searchbar" type="text" placeholder="Zoeken...">
+        </nav>
+        <main class="mainContentFrontpage">
+            <section class="frontpageMovies">
+                <div class="afbeelding1">
+                    <a href="./filmDetails1.html">
+                        <img class="center" src="./img/1917Small.jpg" style="width:70%">
+                    </a>
+                </div>
+                <div class="afbeelding2">
+                    <a href="./filmDetails2.html">
+                        <img class="center" src="./img/duneSmall.jpg" style="width:70%">
+                    </a>
+                </div>
+                <div class="afbeelding3">
+                    <a href="./filmDetails3.html">
+                        <img class="center" src="./img/dunkirkSmall.jpg" style="width:70%">
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Door Guus van Damme</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
